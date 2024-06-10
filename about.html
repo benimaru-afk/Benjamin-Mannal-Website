@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benjamin Mannal - Computer Science Student & IT Specialist</title>
+    <title>About - Benjamin Mannal</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -16,6 +16,23 @@
             background-color: #000;
             padding: 1em;
             text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #808080;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
         }
         main {
             padding: 2em;
@@ -33,20 +50,7 @@
         a:hover {
             text-decoration: underline;
         }
-        .projects {
-            list-style: none;
-            padding: 0;
-        }
-        .projects li {
-            background-color: #000;
-            margin: 10px 0;
-            padding: 15px;
-            box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
-        }
-        .social-links a {
-            margin: 0 10px;
-        }
-        .about-img, .project-img {
+        .about-img {
             display: block;
             max-width: 100%;
             height: auto;
@@ -58,12 +62,19 @@
 <body>
 
 <header>
-    <h1>Benjamin Mannal</h1>
-    <p>Computer Science Student & IT Specialist</p>
+    <h1>About Benjamin Mannal</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-    <section id="about">
+    <section>
         <h2>About Me</h2>
         <img src="profile.jpg" alt="Benjamin Mannal" class="about-img">
         <p>Hello! I'm Benjamin Mannal, a passionate Computer Science student and IT Specialist. I have a deep interest in technology, coding, and solving complex problems.  
@@ -72,17 +83,6 @@
 
         </p>
     </section>
-
-    <section id="social-media">
-        <h2>Connect with Me</h2>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/ben-mannal-59b007251/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/brmannal/" target="_blank">Instagram</a>
-            <a href="https://github.com/benimaru-afk" target="_blank">Github</a>
-        </div>
-    </section>
-
-
 </main>
 
 </body>
